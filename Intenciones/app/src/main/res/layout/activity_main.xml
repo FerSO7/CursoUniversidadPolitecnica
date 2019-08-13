@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp">
+        <Button
+                android:text="abrir pagina web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/abrir_web" android:layout_marginBottom="4dp"
+                android:onClick="paginaWeb"/>
+        <Button
+                android:text="llamada de telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/llamada_telefono"
+                android:layout_marginBottom="4dp" android:onClick="llamadaTelefono"/>
+        <Button
+                android:text="Google Maps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/google_maps"
+                android:layout_marginBottom="4dp" android:onClick="googleMaps"/>
+        <Button
+                android:text="tomar foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tomar_foto"
+                android:layout_marginBottom="4dp" android:onClick="tomarFoto"/>
+        <Button
+                android:text="mandar correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/mandar_correo"
+                android:layout_marginBottom="4dp" android:onClick="mandarCorreo"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
